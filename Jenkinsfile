@@ -23,7 +23,7 @@ tools {
         stage('Visit /health route') {
             steps {
                 script {
-                    sh 'curl http://127.0.0.0:3000/health'
+                    sh 'curl http://localhost:3000/health'
                 }
             }
         }
