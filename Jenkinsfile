@@ -51,3 +51,4 @@ stage('Test the app') {
                 environment {
                     DEPLOY_SSH_KEY = credentials('AWS_INSTANCE_SSH')
                 }
+        }
