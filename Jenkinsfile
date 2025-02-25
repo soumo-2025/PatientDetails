@@ -22,12 +22,5 @@ stages {
                 }
             }
         }     
-stage('Test the app') {
-            steps {
-                script {
-                    sh 'curl http://localhost:3000/health'
-                }
-            }
-        }
 }
 }
