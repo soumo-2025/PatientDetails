@@ -21,7 +21,7 @@ stages {
         stage('Visit /health route') {
             steps {
                 script {
-                    sh 'curl http://localhost:8080/health'
+                    sh 'curl http://localhost:3200/health'
                 }
             }
         }
