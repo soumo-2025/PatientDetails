@@ -8,6 +8,15 @@ stages {
                 }
             }
         }
+
+
+   stage('Run the App') {
+            steps {
+                script {
+                    sh 'yarn start &'
+                    sleep 5
+                }
+            }
+        }     
 }
 }
-        
