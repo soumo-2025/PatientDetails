@@ -17,9 +17,7 @@ stages {
                 }
             }
         }
-tools {
-    nodejs "nodejs"
-}
+
         stage('Visit /health route') {
             steps {
                 script {
