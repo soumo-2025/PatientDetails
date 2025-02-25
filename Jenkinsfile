@@ -1,7 +1,6 @@
 pipeline {
     agent any
-
-    stages {
+stages {
         stage('Install Packages') {
             steps {
                 script {
@@ -22,7 +21,7 @@ pipeline {
         stage('Visit /health route') {
             steps {
                 script {
-                    sh 'curl http://localhost:3000/health'
+                    sh 'curl http://172-31-92-178:3000/health'
                 }
             }
         }
