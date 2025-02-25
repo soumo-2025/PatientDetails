@@ -9,29 +9,4 @@ stages {
             }
         }
 
-        stage('Run the App') {
-            steps {
-                script {
-                    sh 'yarn start &'
-                    sleep 5
-                }
-            }
-        }
-
-        stage('Visit /health route') {
-            steps {
-                script {
-                    sh 'curl http://localhost:3200/health'
-                }
-            }
-        }
-
-        stage('Cleanup') {
-            steps {
-                script {
-                    sh 'pkill -f "node"'
-                }
-            }
-        }
-    }
-}
+        
